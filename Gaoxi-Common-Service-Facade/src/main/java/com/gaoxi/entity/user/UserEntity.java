@@ -1,16 +1,9 @@
 package com.gaoxi.entity.user;
 
-import com.gaoxi.enumeration.user.UserStateEnum;
-import com.gaoxi.enumeration.user.UserTypeEnum;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.List;
 
-/**
- * @Author 大闲人柴毛毛
- * @Date 2017/10/30 下午6:11
- */
 public class UserEntity implements Serializable {
 
     /** 主键 */
@@ -34,14 +27,14 @@ public class UserEntity implements Serializable {
     /** 注册时间 */
     private Timestamp registerTime;
 
-    /** 用户类型 {@link com.gaoxi.enumeration.user.UserTypeEnum} */
-    private UserTypeEnum userTypeEnum;
+    /** 用户类型 */
+    private String userType;
 
-    /** 账号状态 {@link com.gaoxi.enumeration.user.UserStateEnum } */
-    private UserStateEnum userStateEnum;
+    /** 账号状态 */
+    private String userState;
 
     /** 用户的角色 */
-    private RoleEntity roleEntity;
+    private String roleId;
 
     public String getId() {
         return id;
@@ -99,31 +92,29 @@ public class UserEntity implements Serializable {
         this.registerTime = registerTime;
     }
 
-    public UserTypeEnum getUserTypeEnum() {
-        return userTypeEnum;
+    public String getUserType() {
+        return userType;
     }
 
-    public void setUserTypeEnum(UserTypeEnum userTypeEnum) {
-        this.userTypeEnum = userTypeEnum;
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 
-    public UserStateEnum getUserStateEnum() {
-        return userStateEnum;
+    public String getUserState() {
+        return userState;
     }
 
-    public void setUserStateEnum(UserStateEnum userStateEnum) {
-        this.userStateEnum = userStateEnum;
+    public void setUserState(String userState) {
+        this.userState = userState;
     }
 
-    public RoleEntity getRoleEntity() {
-        return roleEntity;
+    public String getRoleId() {
+        return roleId;
     }
 
-    public void setRoleEntity(RoleEntity roleEntity) {
-        this.roleEntity = roleEntity;
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
     }
-
-
 
     @Override
     public String toString() {
@@ -135,9 +126,9 @@ public class UserEntity implements Serializable {
                 ", mail='" + mail + '\'' +
                 ", licencePic='" + licencePic + '\'' +
                 ", registerTime=" + registerTime +
-                ", userTypeEnum=" + userTypeEnum +
-                ", userStateEnum=" + userStateEnum +
-                ", roleEntity=" + roleEntity +
+                ", userType='" + userType + '\'' +
+                ", userState='" + userState + '\'' +
+                ", roleId='" + roleId + '\'' +
                 '}';
     }
 }

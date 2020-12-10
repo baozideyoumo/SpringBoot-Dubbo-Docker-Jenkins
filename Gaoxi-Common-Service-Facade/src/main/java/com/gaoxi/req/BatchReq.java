@@ -3,8 +3,6 @@ package com.gaoxi.req;
 import java.util.List;
 
 /**
- * @author 大闲人柴毛毛
- * @date 2017/11/4 下午3:34
  * @description 批量请求
  */
 public class BatchReq<T> extends AbsReq {

@@ -3,8 +3,6 @@ package com.gaoxi.req.user;
 import com.gaoxi.req.AbsReq;
 
 /**
- * @author 大闲人柴毛毛
- * @date 2017/11/4 下午4:53
  * @description 登录请求
  */
 public class LoginReq extends AbsReq {

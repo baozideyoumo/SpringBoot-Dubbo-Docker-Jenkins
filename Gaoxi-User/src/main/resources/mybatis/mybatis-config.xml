@@ -11,8 +11,6 @@
     <typeAliases>
 
         <typeAlias alias="UserEntity" type="com.gaoxi.entity.user.UserEntity" />
-        <typeAlias alias="RoleEntity" type="com.gaoxi.entity.user.RoleEntity" />
-        <typeAlias alias="PermissionEntity" type="com.gaoxi.entity.user.PermissionEntity" />
 
     </typeAliases>
 

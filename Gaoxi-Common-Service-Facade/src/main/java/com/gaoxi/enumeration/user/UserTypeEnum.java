@@ -3,8 +3,6 @@ package com.gaoxi.enumeration.user;
 import com.gaoxi.enumeration.BaseEnum;
 
 /**
- * @author 大闲人柴毛毛
- * @date 2017/11/1 下午5:17
  * @description
  */
 public enum UserTypeEnum implements BaseEnum {

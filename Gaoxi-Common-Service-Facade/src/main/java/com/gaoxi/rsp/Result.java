@@ -6,8 +6,6 @@ import com.gaoxi.exception.ExpCodeEnum;
 import java.io.Serializable;
 
 /**
- * @Author 大闲人柴毛毛
- * @Date 2017/10/27 下午10:59
  * restful接口通用返回结果
  */
 public class Result<T> implements Serializable {

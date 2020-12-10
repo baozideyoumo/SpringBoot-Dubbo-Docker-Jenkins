@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @Author 大闲人柴毛毛
- * @Date 2017/10/27 下午11:02
  * REST接口的通用异常处理
  */
 @ControllerAdvice
