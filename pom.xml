@@ -5,7 +5,7 @@
 
 	<groupId>com.gaoxi</groupId>
 	<artifactId>gaoxi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Gaoxi</name>
@@ -66,7 +66,7 @@
 		<dependency>
 			<groupId>com.gaoxi</groupId>
 			<artifactId>gaoxi-common-service-facade</artifactId>
-			<version>0.0.1</version>
+			<version>0.0.2</version>
 		</dependency>
 
 		<!-- AOP -->
@@ -85,11 +85,7 @@
 
 
 	<modules>
-		<module>Gaoxi-Analysis</module>
-		<module>Gaoxi-Order</module>
-		<module>Gaoxi-Product</module>
 		<module>Gaoxi-User</module>
-		<module>Gaoxi-Redis</module>
 		<module>Gaoxi-Controller</module>
 		<module>Gaoxi-Common-Service-Facade</module>
 	</modules>

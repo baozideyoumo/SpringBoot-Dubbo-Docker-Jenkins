@@ -2,8 +2,6 @@ package com.gaoxi.req.user;
 
 import com.gaoxi.req.QueryReq;
 
-import java.sql.Timestamp;
-
 /**
  * @description 用户查询请求
  */
@@ -25,23 +23,16 @@ public class UserQueryReq extends QueryReq {
     private String mail;
 
     /** 注册时间(起始) */
-    private String registerTimeStart;
-    /** 注册时间(结束) */
-    private String registerTimeEnd;
+    private String registerTime;
 
-    /** 用户类型 {@link com.gaoxi.enumeration.user.UserTypeEnum} */
-    private Integer userType;
+    /** 用户类型 */
+    private String userType;
 
-    /** 账号状态 {@link com.gaoxi.enumeration.user.UserStateEnum } */
-    private Integer userState;
+    /** 账号状态 */
+    private String userState;
 
     /** 用户角色ID */
     private String roleId;
-
-
-    /** 根据注册时间排序 {@link com.gaoxi.enumeration.OrderEnum} */
-    private Integer orderByRegisterTime;
-
 
     public String getId() {
         return id;
@@ -57,6 +48,14 @@ public class UserQueryReq extends QueryReq {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPhone() {
@@ -75,19 +74,27 @@ public class UserQueryReq extends QueryReq {
         this.mail = mail;
     }
 
-    public Integer getUserType() {
+    public String getRegisterTime() {
+        return registerTime;
+    }
+
+    public void setRegisterTime(String registerTime) {
+        this.registerTime = registerTime;
+    }
+
+    public String getUserType() {
         return userType;
     }
 
-    public void setUserType(Integer userType) {
+    public void setUserType(String userType) {
         this.userType = userType;
     }
 
-    public Integer getUserState() {
+    public String getUserState() {
         return userState;
     }
 
-    public void setUserState(Integer userState) {
+    public void setUserState(String userState) {
         this.userState = userState;
     }
 
@@ -99,39 +106,6 @@ public class UserQueryReq extends QueryReq {
         this.roleId = roleId;
     }
 
-    public String getRegisterTimeStart() {
-        return registerTimeStart;
-    }
-
-    public void setRegisterTimeStart(String registerTimeStart) {
-        this.registerTimeStart = registerTimeStart;
-    }
-
-    public String getRegisterTimeEnd() {
-        return registerTimeEnd;
-    }
-
-    public void setRegisterTimeEnd(String registerTimeEnd) {
-        this.registerTimeEnd = registerTimeEnd;
-    }
-
-    public Integer getOrderByRegisterTime() {
-        return orderByRegisterTime;
-    }
-
-    public void setOrderByRegisterTime(Integer orderByRegisterTime) {
-        this.orderByRegisterTime = orderByRegisterTime;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
     @Override
     public String toString() {
         return "UserQueryReq{" +
@@ -140,15 +114,10 @@ public class UserQueryReq extends QueryReq {
                 ", password='" + password + '\'' +
                 ", phone='" + phone + '\'' +
                 ", mail='" + mail + '\'' +
-                ", registerTimeStart='" + registerTimeStart + '\'' +
-                ", registerTimeEnd='" + registerTimeEnd + '\'' +
-                ", userType=" + userType +
-                ", userState=" + userState +
+                ", registerTime='" + registerTime + '\'' +
+                ", userType='" + userType + '\'' +
+                ", userState='" + userState + '\'' +
                 ", roleId='" + roleId + '\'' +
-                ", orderByRegisterTime=" + orderByRegisterTime +
-                ", page=" + page +
-                ", numPerPage=" + numPerPage +
                 '}';
     }
-
 }

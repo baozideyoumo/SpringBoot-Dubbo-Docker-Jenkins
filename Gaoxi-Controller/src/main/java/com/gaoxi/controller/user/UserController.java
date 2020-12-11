@@ -1,17 +1,11 @@
 package com.gaoxi.controller.user;
 
 import com.gaoxi.annotation.Login;
-import com.gaoxi.annotation.Permission;
-import com.gaoxi.entity.user.*;
-import com.gaoxi.req.BatchReq;
 import com.gaoxi.req.user.*;
 import com.gaoxi.rsp.Result;
 import org.springframework.web.bind.annotation.*;
-
-import javax.persistence.PersistenceUnit;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 /**
  * @Author 大闲人柴毛毛

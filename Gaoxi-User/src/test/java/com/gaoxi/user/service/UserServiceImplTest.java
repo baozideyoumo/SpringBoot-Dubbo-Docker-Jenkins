@@ -35,7 +35,6 @@ public class UserServiceImplTest {
     public void findUsers() throws Exception {
         UserQueryReq userQueryReq = new UserQueryReq();
         userQueryReq.setUsername("cha");
-        userQueryReq.setOrderByRegisterTime(1);
         List<UserEntity> userEntityList = userService.findUsers(userQueryReq);
         System.out.println(userEntityList);
     }

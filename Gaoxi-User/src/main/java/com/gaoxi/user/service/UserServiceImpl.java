@@ -4,28 +4,15 @@ import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.gaoxi.entity.user.*;
-import com.gaoxi.enumeration.user.UserStateEnum;
-import com.gaoxi.enumeration.user.UserTypeEnum;
 import com.gaoxi.exception.CommonBizException;
 import com.gaoxi.exception.ExpCodeEnum;
 import com.gaoxi.facade.user.UserService;
-import com.gaoxi.req.BatchReq;
 import com.gaoxi.req.user.*;
 import com.gaoxi.user.dao.UserDAO;
-import com.gaoxi.utils.KeyGenerator;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.IdGenerator;
-
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
- * @author 大闲人柴毛毛
- * @date 2017/11/1 上午10:06
  * @description 用户相关操作
  */
 @Service(version = "1.0.0")
@@ -61,7 +48,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserEntity> findUsers(UserQueryReq userQueryReq) {
-        return null;
+        return userDAO.findUsers(userQueryReq);
     }
 
     /**

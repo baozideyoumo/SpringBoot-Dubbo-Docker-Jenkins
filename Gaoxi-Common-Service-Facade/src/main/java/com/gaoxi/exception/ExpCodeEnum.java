@@ -1,7 +1,5 @@
 package com.gaoxi.exception;
 
-import com.gaoxi.utils.ExpPrefixUtil;
-
 import java.io.Serializable;
 
 import static com.gaoxi.utils.ExpPrefixUtil.*;
