@@ -2,6 +2,7 @@ package com.gaoxi.user.service;
 
 import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.common.utils.StringUtils;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.gaoxi.entity.user.*;
 import com.gaoxi.exception.CommonBizException;
 import com.gaoxi.exception.ExpCodeEnum;
@@ -9,16 +10,13 @@ import com.gaoxi.facade.user.UserService;
 import com.gaoxi.req.user.*;
 import com.gaoxi.user.dao.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**
  * @description 用户相关操作
  */
-
-@Service("UserServiceImpl")
-@com.alibaba.dubbo.config.annotation.Service
+@Service(version = "1.0.0")
+@org.springframework.stereotype.Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
